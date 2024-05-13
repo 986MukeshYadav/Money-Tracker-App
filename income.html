@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Tracker - Add Income</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Add your custom CSS styles here if needed */
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="text-center text-white bg-primary py-3">Money Tracker</h1>
+    </header>
+    
+    <main class="container mt-4">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Add Income</h2>
+            </div>
+            <div class="card-body">
+                <form id="incomeForm" action="/income" method="POST">
+                    <div class="form-group">
+                        <label for="source">Source:</label>
+                        <input type="text" id="source" name="source" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Amount:</label>
+                        <input type="number" id="amount" name="amount" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Income</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
